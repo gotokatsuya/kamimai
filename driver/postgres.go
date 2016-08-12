@@ -9,7 +9,6 @@ import (
 	"sync"
 
 	"github.com/eure/kamimai/core"
-	"github.com/eure/pairs-fs/vendor/github.com/k0kubun/pp"
 	"github.com/lib/pq"
 )
 
@@ -31,14 +30,11 @@ func (d *Postgres) Open(dsn string) error {
 		return errors.New("invalid data source name of postgres")
 	}
 
-	pp.Println(z[1])
 	db, err := sql.Open("postgres", z[1])
 	if err != nil {
-		pp.Println("Open", err)
 		return err
 	}
 	if err := db.Ping(); err != nil {
-		pp.Println("Ping", err)
 		return err
 	}
 	d.db = db
