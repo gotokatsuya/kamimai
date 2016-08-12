@@ -18,6 +18,7 @@ env:
 install:
   - go get -d github.com/BurntSushi/toml
   - go get -d github.com/go-sql-driver/mysql
+  - go get -d github.com/lib/pq
   - go get -d github.com/stretchr/testify/assert
   - go get -d gopkg.in/yaml.v2
   - go get -u github.com/golang/lint/golint
