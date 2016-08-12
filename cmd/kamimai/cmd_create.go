@@ -5,7 +5,6 @@ import (
 	"os"
 
 	"github.com/eure/kamimai/core"
-	"github.com/eure/pairs-fs/vendor/github.com/k0kubun/pp"
 )
 
 var (
@@ -20,7 +19,6 @@ func doCreateCmd(cmd *Cmd, args ...string) error {
 
 	// driver
 	driver := core.GetDriver(config.Driver())
-	pp.Println(config.Dsn())
 	if err := driver.Open(config.Dsn()); err != nil {
 		return err
 	}
