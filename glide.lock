@@ -1,10 +1,14 @@
-hash: f3a79937b4b3cc96d247e9a49cb5674453c0afe2eff14290cec79a9d8404f7a2
-updated: 2016-06-28T16:56:28.16073038+09:00
+hash: c649c713d65d80137a00778f01182f016b2a3a6bb17e07fb860a778da9a093b6
+updated: 2016-08-12T19:12:48.517451505+09:00
 imports:
 - name: github.com/BurntSushi/toml
   version: f0aeabca5a127c4078abb8c8d64298b147264b55
 - name: github.com/go-sql-driver/mysql
   version: 3654d25ec346ee8ce71a68431025458d52a38ac0
+- name: github.com/lib/pq
+  version: 80f8150043c80fb52dee6bc863a709cdac7ec8f8
+  subpackages:
+  - oid
 - name: gopkg.in/yaml.v2
   version: a83829b6f1293c91addabc89d0571c246397bbf4
 devImports: []
